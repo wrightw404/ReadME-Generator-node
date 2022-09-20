@@ -72,7 +72,14 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    //uses inquirer to get user input from the questions then take that user input (inquirerInput) is set to be put in the newly generated ReadME
+    inquirer.prompt(questions).then((inquirerInput) => {
+        
+    })
+
+    
+}
 
 // Function call to initialize app
 init();
