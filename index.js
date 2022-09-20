@@ -36,6 +36,7 @@ const questions = [
         message: "What type of license do you have for your project?",
         name: "license",
         choices: ['MIT', 'Apache', 'GPL', 'None'],
+        validate: (value) => {if(value){return true}else{return 'I need a value to continure'}},
     },
     {
         type: "input",
@@ -64,7 +65,11 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+
+    //writeFileSync create a new file in the current working directory ( process.cwd() ) 
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data)
+}
 
 // TODO: Create a function to initialize app
 function init() {}
