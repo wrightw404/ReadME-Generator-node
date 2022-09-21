@@ -3,17 +3,18 @@ function template(data) {
         ### Project Title  
         ${data.title}
 
-        ### Description 
-        ${data.description}
 
         ### Table of Contents 
-        -  [Description](#description)
+        - [Description](#description)
         - [Installation](#installation)
         - [Usage](#usage)
         - [License](#license)
         - [Contributing](#contributing)
         - [Tests](#tests)
         - [Questions](#questions)
+
+        ### Description 
+        ${data.description}
 
         #installation
         ${data.installation}
@@ -22,7 +23,8 @@ function template(data) {
         ${data.usage}
 
         ## license 
-        ${data.license}
+        ![badge](https://img.shields.io/badge/license-${data.license}-brightgreen)
+        This project is using a(n) ${data.license} license. 
 
         #contributing
         ${data.contributing}
@@ -31,8 +33,8 @@ function template(data) {
         ${data.tests}
 
        ### Questions 
-       ${data.github}
-       ${data.email}
+       Find me on GitHub: [${data.github}](https://github.com/${data.github}
+       You can reach out to me at ${data.email}
     
     `
 }
