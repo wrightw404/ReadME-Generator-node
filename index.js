@@ -36,7 +36,15 @@ const questions = [
         type: "list",
         message: "What type of license do you have for your project?",
         name: "license",
-        choices: ['MIT', 'Apache', 'GPL', 'None'],
+        choices: [
+            "Apache",
+            "Academic",
+            "GNU",
+            "ISC",
+            "MIT",
+            "Mozilla",
+            "Open"
+                ],
         validate: (value) => {if(value){return true}else{return 'I need a value to continure'}},
     },
     {
