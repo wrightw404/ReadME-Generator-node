@@ -2,7 +2,8 @@
 const path = require("path");
 const fs = require('fs');
 const inquirer = require('inquirer');
-const generateMarkdown = require("./generateMarkdown");
+const generateReadme = require('./generateReadme')
+
 
 
 
@@ -83,11 +84,12 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     //uses inquirer to get user input from the questions then take that user input (inquirerInput) is set to be put in the newly generated ReadME 
-    // generateMarkdown({...inquirerInput})
+    //const generateReadme = generateMarkdown({...inquirerInput})
    
     inquirer.prompt(questions).then((inquirerInput) => {
-        console.log("creating your README.md document..")
-        writeToFile('README.md', generateMarkdown({...inquirerInput}))
+        
+        console.log("creating your README.md document..");
+        writeToFile('README.md', generateReadme({...inquirerInput}));
     })
     
 }

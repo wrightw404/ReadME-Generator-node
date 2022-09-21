@@ -1,6 +1,11 @@
-function generateMarkdown(data) {
+module.exports = {
+    generateReadme
+}
+ 
+ 
+ function generateReadme(data) {
     return `
-        ### Project Title  
+        ## Project Title  
         ${data.title}
 
 
@@ -13,7 +18,7 @@ function generateMarkdown(data) {
         - [Tests](#tests)
         - [Questions](#questions)
 
-        ### Description 
+        #Description 
         ${data.description}
 
         #installation
@@ -22,7 +27,7 @@ function generateMarkdown(data) {
         #usage
         ${data.usage}
 
-        ## license 
+        #license 
         ![badge](https://img.shields.io/badge/license-${data.license}-brightgreen)
         This project is using a(n) ${data.license} license. 
 
@@ -32,9 +37,9 @@ function generateMarkdown(data) {
         #tests
         ${data.tests}
 
-       ### Questions 
-       Find me on GitHub: [${data.github}](https://github.com/${data.github}
-       You can reach out to me at ${data.email}
+        #Questions 
+        Find me on GitHub: [${data.github}](https://github.com/${data.github}
+        You can reach out to me at ${data.email}
     
     `
 }
