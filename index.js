@@ -2,6 +2,7 @@
 const path = require("path");
 const fs = require('fs');
 const inquirer = require('inquirer');
+const template = require('./template.js');
 
 
 
@@ -75,10 +76,9 @@ function writeToFile(fileName, data) {
 function init() {
     //uses inquirer to get user input from the questions then take that user input (inquirerInput) is set to be put in the newly generated ReadME
     inquirer.prompt(questions).then((inquirerInput) => {
-        console.log("creating your readME document..")
-        
+        console.log("creating your ReadME document..")
+        writeToFile('README.md', template({...inquirerInput}))
     })
-
     
 }
 
