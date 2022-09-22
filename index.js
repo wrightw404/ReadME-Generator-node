@@ -1,8 +1,12 @@
 // TODO: Include packages needed for this application
-const path = require("path");
-const fs = require('fs');
-const inquirer = require('inquirer');
-const generateReadme = require('./generateReadme')
+import { join } from "path";
+import { writeFileSync } from 'fs';
+//import { prompt } from 'inquirer';
+import pkg from "inquirer";
+const { prompt } = pkg;
+import generateReadme from './generateReadme.js';
+//import {generateReadme} from './generateReadme.js';
+//const generatedReadme = generateReadme();
 
 
 
@@ -78,7 +82,7 @@ const questions = [
 function writeToFile(fileName, data) {
 
     //writeFileSync create a new file in the current working directory ( process.cwd() ) 
-    return fs.writeFileSync(path.join(process.cwd(), fileName), data)
+    return writeFileSync(join(process.cwd(), fileName), data)
 }
 
 // TODO: Create a function to initialize app
@@ -86,7 +90,7 @@ function init() {
     //uses inquirer to get user input from the questions then take that user input (inquirerInput) is set to be put in the newly generated ReadME 
     //const generateReadme = generateMarkdown({...inquirerInput})
    
-    inquirer.prompt(questions).then((inquirerInput) => {
+    prompt(questions).then((inquirerInput) => {
         
         console.log("creating your README.md document..");
         writeToFile('README.md', generateReadme({...inquirerInput}));

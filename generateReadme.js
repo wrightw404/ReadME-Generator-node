@@ -1,9 +1,9 @@
-module.exports = {
-    generateReadme
-}
+//module.exports = {
+//    generateReadme
+//}
  
  
- function generateReadme(data) {
+export default function generateReadme(data) {
     return `
         ## Project Title  
         ${data.title}
