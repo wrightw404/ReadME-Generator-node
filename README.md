@@ -1,38 +1,37 @@
 
         ## Project Title  
-        README.md Generator using node js
+        <h1>README.md Generator with node js</h1>
 
 
-        ### Table of Contents 
-        - [Description](#description)
-        - [Installation](#installation)
-        - [Usage](#usage)
-        - [License](#license)
-        - [Contributing](#contributing)
-        - [Tests](#tests)
-        - [Questions](#questions)
+        # Table of Contents 
+        1. [Description](#description)
+        2. [Installation](#installation)
+        3. [Usage](#usage)
+        4. [License](#license)
+        5. [Contributing](#contributing)
+        6. [Tests](#tests)
+        7. [Questions](#questions)
 
-        # Description 
-        created an application using node js that creates a README based on user input
+        ##Description <a name ="description"></a>
+        created an application using node js that generates a README.md file that is populated with user input 
 
-        #installation
-        install inquirer and make type: module in package.json
+        ##installation <a name ="installation"></a>
+        install inquirer set type to module in package.json 
 
-        #usage
-        run node index.js in command line 
+        ##usage <a name ="usage"></a>
+        to create a README quickly and efficiently 
 
-        #license 
+        ##license <a name ="license"></a>
         ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
         This project is using a(n) MIT license. 
 
-        #contributing
-        can clone or fork project on github repo 
+        ##contributing <a name ="contributing"></a>
+        william wright 
 
-        #tests
+        ##tests <a name ="tests"></a>
         no tests at the moment 
 
-        #Questions 
-        Find me on GitHub: [wrightw404](https://github.com/wrightw404
-        You can reach out to me at wrightw404@gmail.com
-    
+        ##Questions <a name ="questions"></a>
+        Find me on GitHub: [wrightw404](https://github.com/wrightw404)
+        If you have any questions or concerns you can reach out to me by email at wrightw404@gmail.com
     
