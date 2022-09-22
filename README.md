@@ -1,6 +1,6 @@
 
         ## Project Title  
-        w
+        README.md Generator using node js
 
 
         ### Table of Contents 
@@ -13,26 +13,26 @@
         - [Questions](#questions)
 
         #Description 
-        w
+        created an application using node js that creates a README based on user input
 
         #installation
-        w
+        install inquirer and make type: module in package.json
 
         #usage
-        w
+        run node index.js in command line 
 
         #license 
         ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
         This project is using a(n) MIT license. 
 
         #contributing
-        w
+        can clone or fork project on github repo 
 
         #tests
-        w
+        no tests at the moment 
 
         #Questions 
-        Find me on GitHub: [w](https://github.com/w
-        You can reach out to me at w
+        Find me on GitHub: [wrightw404](https://github.com/wrightw404
+        You can reach out to me at wrightw404@gmail.com
     
     

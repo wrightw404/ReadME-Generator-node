@@ -6,7 +6,7 @@
 export default function generateReadme(data) {
     return `
         ## Project Title  
-        ${data.title}
+        <h1>${data.title}</h1>
 
 
         ### Table of Contents 
@@ -38,8 +38,8 @@ export default function generateReadme(data) {
         ${data.tests}
 
         #Questions 
-        Find me on GitHub: [${data.github}](https://github.com/${data.github}
-        You can reach out to me at ${data.email}
+        Find me on GitHub: [${data.github}](https://github.com/${data.github})
+        If you have any questions or concerns you can reach out to me by email at ${data.email}
     
     `
 }
