@@ -40,13 +40,10 @@ const questions = [
         message: "What type of license do you have for your project?",
         name: "license",
         choices: [
-            "Apache",
-            "Academic",
-            "GNU",
+            "Apache_2.0",
             "ISC",
             "MIT",
-            "Mozilla",
-            "Open"
+            "MPL_2.0",
                 ],
         validate: (value) => {if(value){return true}else{return 'I need a value to continure'}},
     },
@@ -90,7 +87,7 @@ function init() {
     prompt(questions).then((inquirerInput) => {
         
         console.log("creating your README.md document..");
-        writeToFile('README.md', generateReadme({...inquirerInput}));
+        writeToFile('READMEsample.md', generateReadme({...inquirerInput}));
     })
     
 }
