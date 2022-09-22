@@ -13,20 +13,20 @@
 # Description 
 ### ${data.description}
 
-# installation
+# Installation
 ### ${data.installation}
 
-# usage 
+# Usage 
 ### ${data.usage}
 
-# license 
+# License 
 ## ![badge](https://img.shields.io/badge/license-${data.license}-brightgreen)
 ### This project is using a(n) ${data.license} license.
 
-# contributing 
+# Contributing 
 ### ${data.contributing}
 
-# tests
+# Tests
 ### ${data.tests}
 
 # Questions
