@@ -17,7 +17,8 @@ This is an application that uses node js and the inquirer package to generate a 
 ![Screen Shot 2022-09-22 at 5 36 30 PM](https://user-images.githubusercontent.com/53288050/191855799-b90e076b-a249-4fe9-b9c2-74fbb55f9a45.png)
 
 ## Walkthrough 
-<iframe src="https://drive.google.com/file/d/105ZEFA39rVyVopeOpleY8h7rY4Kp4n82/preview" width="640" height="480"></iframe>
+<iframe src="https://drive.google.com/file/d/105ZEFA39rVyVopeOpleY8h7rY4Kp4n82/view" width="640" height="480"></iframe>
+
 
 ## Installation
 to use this application one must install inquirer 
