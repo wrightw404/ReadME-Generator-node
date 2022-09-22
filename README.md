@@ -12,7 +12,7 @@
         - [Tests](#tests)
         - [Questions](#questions)
 
-        #Description 
+        # Description 
         created an application using node js that creates a README based on user input
 
         #installation

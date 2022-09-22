@@ -1,12 +1,10 @@
 // TODO: Include packages needed for this application
 import { join } from "path";
 import { writeFileSync } from 'fs';
-//import { prompt } from 'inquirer';
 import pkg from "inquirer";
 const { prompt } = pkg;
 import generateReadme from './generateReadme.js';
-//import {generateReadme} from './generateReadme.js';
-//const generatedReadme = generateReadme();
+
 
 
 
@@ -60,19 +58,19 @@ const questions = [
     },
     {
         type: "input",
-        message: "Please provide instructions on how to use your project",
+        message: "What is the project usage for?",
         name: "usage",
         validate: (value) => {if(value){return true}else{return 'I need a value to continure'}}, 
     },
     {
         type: "input",
-        message: "Please include guidelines on how other users can contribute to your project",
+        message: "Who contributed to your project?",
         name: "contributing",
         validate: (value) => {if(value){return true}else{return 'I need a value to continure'}}, 
     },
     {
         type: "input",
-        message: "What command should be run to test the project",
+        message: "Are there any tests included?",
         name: "tests",
         validate: (value) => {if(value){return true}else{return 'I need a value to continure'}}, 
     },
@@ -88,7 +86,6 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     //uses inquirer to get user input from the questions then take that user input (inquirerInput) is set to be put in the newly generated ReadME 
-    //const generateReadme = generateMarkdown({...inquirerInput})
    
     prompt(questions).then((inquirerInput) => {
         

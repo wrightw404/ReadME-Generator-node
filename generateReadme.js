@@ -9,37 +9,36 @@ export default function generateReadme(data) {
         <h1>${data.title}</h1>
 
 
-        ### Table of Contents 
-        - [Description](#description)
-        - [Installation](#installation)
-        - [Usage](#usage)
-        - [License](#license)
-        - [Contributing](#contributing)
-        - [Tests](#tests)
-        - [Questions](#questions)
+        # Table of Contents 
+        1. [Description](#description)
+        2. [Installation](#installation)
+        3. [Usage](#usage)
+        4. [License](#license)
+        5. [Contributing](#contributing)
+        6. [Tests](#tests)
+        7. [Questions](#questions)
 
-        #Description 
+        ##Description <a name ="description"></a>
         ${data.description}
 
-        #installation
+        ##installation <a name ="installation"></a>
         ${data.installation}
 
-        #usage
+        ##usage <a name ="usage"></a>
         ${data.usage}
 
-        #license 
+        ##license <a name ="license"></a>
         ![badge](https://img.shields.io/badge/license-${data.license}-brightgreen)
         This project is using a(n) ${data.license} license. 
 
-        #contributing
+        ##contributing <a name ="contributing"></a>
         ${data.contributing}
 
-        #tests
+        ##tests <a name ="tests"></a>
         ${data.tests}
 
-        #Questions 
+        ##Questions <a name ="questions"></a>
         Find me on GitHub: [${data.github}](https://github.com/${data.github})
         If you have any questions or concerns you can reach out to me by email at ${data.email}
-    
     `
 }
